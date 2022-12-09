@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+
+.container{
+    max-width: 1171px;
+    margin: 0 auto;
+}
+/* header */
+header{
+    background-color: #c965c6;
+}
+.header__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__title{
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size:  45px;
+}
+.header__subtitle{
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size:  20px;
+}
+.header__logo-img img{
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.header__info{
+    background-color: #ea8df7;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Jost-light';
+    font-weight: 300;
+    font-size: 15px;
+}
+.header__info-adress{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+.header__info-adress-img svg{
+    max-width: 18px;
+    height: auto;
+    margin-right: 5px;
+}
+.header__info-time{
+    display: flex;
+    align-items: center;
+}
+.header__info-time-img svg{
+    max-width: 18px;
+    height: auto;
+    margin-right: 5px;
+}
+.header__contacts{
+    align-items: center;
+    
+}
+.header__tel{
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size:  25px;
+    margin-bottom: 15px;
+}
+.header__contacts_media{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    font-family: 'Jost-light';
+    font-weight: 300;
+    font-size: 20px;
+}
+.header__contacts_media-text{
+    border-bottom: 1px solid black;
+}
+.slash{
+    margin: 0 5px;
+}
