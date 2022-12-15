@@ -4,6 +4,7 @@
     --text-color: white;
     --title-color: white;
     --info-text-color: #48126b;
+    --hover-bgc-color:#8913d7b9;
 }
 :root{
     --main-font-family:'Jost', sans-serif;
@@ -33,7 +34,7 @@
     font-weight: 300;
     font-size: 15px;
 }
-
+/* index */
 /* header */
 header{
     background-color: var(--header-color);
@@ -110,6 +111,11 @@ header{
     transition: all .3s;
 }
 
+.header__tel:hover{
+    transition: all .3s;
+    color: var(--info-text-color);
+    
+}
 
 .header__contacts_media{
     margin-top: 10px;
@@ -126,10 +132,21 @@ header{
     font-family: var(--ligt-font-family);
     transition: all .3s;
 }
+.header__contacts_media-text:hover{
+    transition: all .3s;
+    color: var(--info-text-color);
+    border-bottom: none;
+}
 
 .slash{
     margin: 0 5px;
     color: var(--text-color);
+    transition: all .3s;
+    cursor:default;
+}
+.slash:hover{
+    transition: all .3s;
+    color: var(--info-text-color);
 }
 
 .header__nav{
@@ -151,12 +168,22 @@ header{
     font-size:  20px;
     color: var(--text-color);
     cursor: pointer;
-    
+    transition: all .3s;
+}
+.header__nav-item:hover{
+    color: var(--info-text-color);
+    transition: all .3s;
 }
 .nav__active{
     background-color: var(--header-element-color);
     padding: 15px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.nav__active:hover{
+    transition: all .3s;
+    background-color: var(--hover-bgc-color);
 }
 
 /* about */
@@ -214,7 +241,7 @@ header{
 
 /* footer */
 footer{
-    background-color: var(--info-text-color);
+    background-color: var(--hover-bgc-color);
     height: 90px;
     align-items: center;
     justify-content: center;
@@ -230,4 +257,40 @@ footer{
 .footer__contacts{
     display: flex;
     align-items: center;
+}
+
+
+/* ABOUT.HTML */
+
+/* about__info */
+
+.about__info-text{
+    font-family: var(--main-font-family);
+    line-height: 1.6;
+    max-width: 700px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px 0 75px;
+    color: var(--info-text-color);
+}
+
+/* RULES.HTML */
+
+.rules__title{
+    color: var(--info-text-color);
+    margin: 40px 0 5px;
+    text-transform: lowercase;
+}
+.rules__subtitle{
+    color: var(--header-color);
+    margin-left: 60px;
+}
+
+.rules__subtitle:last-child{
+    margin-bottom: 40px;
+}
+.rules__item{
+    margin-left: 40px;
 }
