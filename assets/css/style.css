@@ -294,3 +294,38 @@ footer{
 .rules__item{
     margin-left: 40px;
 }
+
+/* CONTACTS.HTML */
+.contacts{
+    margin: 30px 0 ;
+}
+.contacts__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__info{
+    background-color: var(--header-element-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 50px 50px;
+    border-radius: 10px;
+}
+.contacts__info_title{
+    text-transform: inherit;
+}
+.contacts__info_media{
+    margin: 20px 0 ;
+}
+.contacts__info_media_soc{
+    display: flex;
+    margin: 20px 0 0;
+    font-size: 20px;
+}
+.contacts__card__subtitle{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.contacts__card_yandexCard{
+    margin-top: 50px;
+}
