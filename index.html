@@ -8,8 +8,6 @@
     <link rel="icon" href="./assets/img/logo-demo.jpg">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="/assets/css/itc-slider.css">
-    <script src="/assets/js/itc-slider.js" defer></script>
 </head>
 <body>
     <header>
@@ -99,38 +97,26 @@
         <section class="popular">
             <div class="container">
                 <h2 class="header__title popular__title">Популярные костюмы  <a class="popular__active" href="./catalog/girl.html">для девочек</a></h2>
-
-                <!-- <div class="itc-slider">
-                    <div class="itc-slider__wrapper">
-                      <div class="itc-slider__items">
-                        <div class="itc-slider__item">
-                          <img src="./assets/img/girl/2022-12-17 01.09.15.jpg" alt="">
-                        </div>
-                        <div class="itc-slider__item">
-                            <img src="./assets/img/girl/2022-12-17 01.09.46.jpg" alt="">
-                        </div>
-                        <div class="itc-slider__item">
-                            <img src="./assets/img/girl/2022-12-17 01.09.50.jpg" alt="">
-                        </div>
-                      </div>
+                <div class="slider">
+                    <div class="slider-line">
+                        <img class="slider-img" src="./assets/img/girl/2022-12-17 01.09.15.jpg" alt="1">
+                        <img class="slider-img" src="./assets/img/girl/2022-12-17 01.09.46.jpg" alt="2">
+                        <img class="slider-img" src="./assets/img/girl/2022-12-17 01.09.50.jpg" alt="3">
+                        <img class="slider-img" src="./assets/img/girl/2022-12-17 01.09.54.jpg" alt="4">
                     </div>
-                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
-                    <button class="itc-slider__btn itc-slider__btn_next"></button>
+                </div>
 
-                    <ol class="itc-slider__indicators">
-                        <li class="itc-slider__indicator" data-slide-to="0"></li>
-                        <li class="itc-slider__indicator" data-slide-to="1"></li>
-                        <li class="itc-slider__indicator" data-slide-to="2"></li>
-                      </ol>
-                  </div> -->
-                
+                <div class="slider__buttons">
+                    <button class="slider-next slider-left"></button>
+                    <button class="slider-next slider-right"></button>
+                    
+                </div>
+
                 <h2 class="header__title popular__title">Популярные костюмы <a class="popular__active" href="./catalog/boy.html">для мальчиков</a></h2>
 
                 <div class="popular__nav info__item-wrap">
                     <div class="popular__nav_girl">
                          <a class="info__item header__nav-item popular__nav_girl" href="./catalog/girl.html">Все костюмы для Девочек</a>
-
                     </div>
                     <div class="popular__nav_boy">
                          <a class="info__item header__nav-item popular__nav_girl" href="./catalog/boy.html">Все костюмы для Мальчиков</a>
@@ -156,5 +142,6 @@
             </div>
         </section>
     </footer>
+    <script src="./assets/js/scriptSlider.js"></script>
 </body>
 </html>
