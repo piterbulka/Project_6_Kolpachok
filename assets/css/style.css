@@ -380,3 +380,54 @@ footer{
 .contacts__card_yandexCard{
     margin-top: 50px;
 }
+
+/* CATALOG */
+
+.list {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 35px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+.list__item{
+    border-radius: 10px;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+    width: fit-content;
+    
+}
+
+.item__img{
+    height: 551px ;
+    width: 365px;
+    border-top-left-radius: 10px;
+}
+
+.item__img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list__item-content{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.list__item-content-title{
+    font-family: var(--main-font-family);
+    font-weight: 700px;
+    color: var(--info-text-color);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.list__item-content-price{
+    font-family: var(--main-font-family);
+    font-weight: 700px;
+    color: var(--header-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}

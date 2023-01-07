@@ -1,31 +1,32 @@
+
 const boys = [
   {
     id: 1,
     img: '../assets/img/boy/ded.jpg',
-    title: 'Гладиатор',
+    title: 'Дед Мороз',
     number: 607,
-    price: 1900,
+    price: 300,
   },
   {
     id: 2,
-    img: 'https://ronitto.ru/wp-content/uploads/2021/09/607-400x602.jpg',
-    title: 'test',
+    img: '../assets/img/boy/princ.jpg',
+    title: 'Принц',
     number: 607,
-    price: 1900,
+    price: 300,
   },
   {
     id: 3,
-    img: 'https://ronitto.ru/wp-content/uploads/2021/09/607-400x602.jpg',
-    title: 'testtes',
+    img: '../assets/img/boy/samuray.jpg',
+    title: 'Самурай',
     number: 607,
-    price: 1900,
+    price: 300,
   },
   {
     id: 4,
-    img: 'https://ronitto.ru/wp-content/uploads/2021/09/607-400x602.jpg',
-    title: 'test10000',
+    img: '../assets/img/boy/wolf.jpg',
+    title: 'Волк',
     number: 607,
-    price: 1900,
+    price: 300,
   },
 ];
 
@@ -34,15 +35,12 @@ function MyApp() {
     return (
       <div key={item.id} class="list__item">
         <div class="item__img">
-          <img width="400" height="602" src={item.img} class="img" alt={item.title} />
+          <img  src={item.img} class="img" alt={item.title} />
         </div>
 
         <div class="list__item-content">
-          <h2 class="woocommerce-loop-product__title">{item.title}</h2>
-
-          <span class="costume-number">Номер костюма: {item.number}</span>
-
-          <span class="price">{item.price} руб./сутки</span>
+          <h2 class="list__item-content-title  ">{item.title}</h2>
+          <span class="list__item-content-price">{item.price} руб./сутки</span>
         </div>
       </div>
     );
