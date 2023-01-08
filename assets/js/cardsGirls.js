@@ -95,7 +95,7 @@ const girls = [
     });
   
     return (
-      <div class="container">
+      <div class="containerGirlBoy">
         <div class="list">{cardGirls}</div>
       </div>
     );

@@ -247,12 +247,12 @@ header{
     display: flex;
     justify-content: center;
     align-items:center ;
+        gap: 40px;
 }
 .slider,
 .slider-boy{
     width: 854px;
     height: 417px;
-    margin: 30px auto;
     overflow: hidden; 
 }
 .slider-line,
@@ -278,7 +278,6 @@ header{
     background-color: inherit;
     border-top: 5px solid var(--info-text-color);
     border-right: 5px solid var(--info-text-color);;
-    margin-right: 60px;
     cursor: pointer;
 }
 
@@ -345,7 +344,12 @@ footer{
 .rules__subtitle{
     color: var(--header-color);
     margin-left: 60px;
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size:  23px;
+
 }
+
 
 .rules__subtitle:last-child{
     margin-bottom: 40px;
@@ -387,14 +391,19 @@ footer{
 }
 .contacts__card_yandexCard{
     margin-top: 50px;
+    
 }
-
+.yandexcard{
+    width: 600px;
+    height: 400px;
+}
 /* CATALOG */
 
 .list {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    gap: 35px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 70px;
     margin-bottom: 70px;
   }
@@ -402,7 +411,7 @@ footer{
 .list__item{
     border-radius: 10px;
     box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
-    width: fit-content;
+    width: min-content;
     
 }
 
@@ -463,4 +472,9 @@ footer{
 
 .catalog__title{
     padding-bottom: 30px;
+}
+
+.containerGirlBoy{
+    max-width: 1171px;
+    margin: 0 auto;
 }
